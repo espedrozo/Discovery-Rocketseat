@@ -158,3 +158,203 @@ const person = {
 }
 delete person.age;
 console.log(person);
+
+
+
+
+//Operadores aritiméticos
+//multiplicação *
+//console.log(3.2 * 5.5);
+
+//divisão /
+//console.log(12 / 2);
+
+//soma +
+//console.log(34 + 10);
+
+//subtração -
+//console.log(30 - 22);
+
+//resto da divisão %
+//let remainder = 11 % 9   resto é = 2
+//console.log(remainder)
+
+//incremento ++
+// let increment = 0;
+// increment++;
+// console.log(++increment); = 1
+// console.log(increment); = 1
+
+
+//decremento --
+//let decrement = 0
+//decrement--
+//console.log(decrement);
+
+
+
+//exponencial **
+//console.log(2**3);
+
+
+//GROUPING OPERATOR ( ) ----- entra a questão de precedencia, onde o que está no pareteses será calculado antes.
+
+
+
+
+//Operadores de comparação
+//compara valores e retorna boolean
+
+/* 
+    let one = 1;
+    let two = 2;
+
+    == igual a
+    console.log(two == 1) --------- false
+    console.log(one == "1") --------true
+
+    != diferente de
+    console.log(one != two) ---------true
+    console.log(one != 1)------------false
+    console.log(one != "1")----------false
+
+
+
+    //Operadores de comparação estritamente igual/diferente
+    //compara valores e retorna boolean
+
+    /* 
+    let one = 1;
+    let two = 2;
+
+    === estritamente igual a
+    console.log(one === 1) --------- true
+    console.log(one === "1") --------false
+
+    !== estritamente diferente de
+    console.log(two !== "2") ---------true
+    console.log(two !== 2)------------false
+*/
+
+//operadores de comparação menor e maior e igual
+// <  >  <=  >=
+
+
+
+
+/*
+    Operadores de atribuição
+    assignment
+    x = 1
+
+    addition assignment
+    x = x + 1
+    x += 1
+
+    subtraction assignment
+    x = x - 1
+
+    multiplication assignment
+    x = x * 1
+    x *= 1
+
+    division assignment
+    x = x / 1
+    x /= 1
+
+    remainder, exponetiation
+    x %= 1
+    x**= 1
+
+
+
+
+
+    LOGICAL OPERATORS
+
+    AND &&
+
+    OR ||
+
+    NOT !
+
+
+
+    OPERADOR CONDICIONAL (TERNÁRIO)
+
+    condição então VALO1 se não VALOR2
+    condition ? value1 : value2
+
+    let pao = true
+    let queijo = true
+    const breakfast = pao && queijo ? "café top" : "café ruim"
+    console.log(breakfast) ----------- café top
+
+
+
+
+    OPERADOR DE STRING
+    comparison
+    "a" == "a"
+
+    concatenation
+    "a" + "b"    ---------- ab
+    "alpha" += "bet" -------alphabet
+
+
+
+
+
+    FALSY
+    Quando um valor é considerado false em contextos onde um booleano é obrigatório (condicionais e loops)
+
+    false
+    0
+    -0
+    ""
+    null
+    undefined
+    NaN
+
+    todos são falsy, vai dar um booleano false
+    console.log(0 ? "verdadeiro" : "falso") ---- falso
+
+
+
+
+
+    TRUTHY - confiável
+    Quando o valor é considerado true em contextos onde um booleano é obrigatório (condicionais e loops)
+
+    true
+    {}
+    []
+    1
+    3.23
+    "0"
+    "false"
+    -1
+    Infinity
+    -Infinity
+
+    todos serão true
+    console.log(Infinity ? "verdadeiro" : "falso") ----- verdadeiro
+
+
+
+
+
+    OPERATOR PRECEDENCE
+
+    grouping                     ()
+    negação e incremento         !  ++  --
+    multiplicação e divisão      *  /
+    adição e subtração           +  -
+    relacional                   <  <=  >  >=
+    igualdade                    ==  !=  ===  !==
+    AND                          &&
+    OR                           ||
+    condicional                  ?:
+    assignment                   =  +=  -=  *= %=
+
+*/
