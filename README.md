@@ -1,2 +1,2 @@
 # Studies
-My course notes
+My courses notes
