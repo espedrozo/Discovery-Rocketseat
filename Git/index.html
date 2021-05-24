@@ -1,0 +1,45 @@
+Working directory ou working tree
+- todos os nossos arquivos
+
+Stage area ou Stage tree
+- preparação dos nossos arquivos, para serem commitados
+-index
+
+Rapository (local) ou Histórico
+- banco de dados dos nosos arquivos
+- onde ficarão os pontos da hitória
+
+---------------------------------------------------------------------
+
+
+Histórico do projeto no git
+ls -al .git  = listar todos os arquivos do diretório .git
+cat .git/config
+
+
+git log  = histórico do projeto
+HEAD aponta onde estamos no histórico do projeto
+
+git log --oneline  = trazer histórico reduzido
+git log -n 5  = trazer os últimos 5 commits
+
+git log --since=2020-12-01   = trazer uma data específica
+
+git log --until=2020-12-01  = traz histórico anteriores a data específica
+
+git log --author=Emanuel   = filtrar log/histórico pelo autor
+
+
+git log --grep=”bugfix”  = traz todo log que tiver a palavra ou frase especificada
+
+git add *.html  = add todos .html
+
+git add .  = add tudo para o commit
+
+git diff  = mostra todas as alterações do WORKING DIRECTORY versus o repositório (rastreados - aqueles que já foram commitados ao menos uma vez)
+
+git diff --staged  = mostra somente o que está no stage area versus o que está no repositório
+
+git rm <file>  = revome totalmente o file, não vai nem pra lixeira
+
+git restore --staged <file>  = tira o file do add para o commit
