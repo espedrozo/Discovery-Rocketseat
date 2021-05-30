@@ -54,3 +54,15 @@ git mv <file> = mv de move, é também a mesma coisa que renomear pq muda o cami
 
 
     mkdir  =  make directory  = fazer nova pasta
+
+
+git restore <file>  =  restaurar modificação de file antes do staged
+
+git restore --staged <file>  =  restaurar file que já está no staged area
+
+git reset HEAD <file>  =  também restaura file do staged area (usado antigamente)
+
+git restore --staged <file> .  =  restaurar tudo
+
+    - após restaurar do staged area, posso restaurar modificações de files com o git restore
+    
