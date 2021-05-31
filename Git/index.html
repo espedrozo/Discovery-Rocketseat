@@ -16,6 +16,9 @@ Histórico do projeto no git
 ls -al .git  = listar todos os arquivos do diretório .git
 cat .git/config
 
+:q - quit
+:wq - write and quit
+
 
 git log  = histórico do projeto
 HEAD aponta onde estamos no histórico do projeto
@@ -65,4 +68,9 @@ git reset HEAD <file>  =  também restaura file do staged area (usado antigament
 git restore --staged <file> .  =  restaurar tudo
 
     - após restaurar do staged area, posso restaurar modificações de files com o git restore
+    
+
+git commit --amend -m "msg here"  =  corrigir a msg do último commit feito.
+
+git checkout <parte da hash code> -- <file>  =  traz um arquivo mais antigo da linha do tempo e já deixa pronto no staged area para commit
     
