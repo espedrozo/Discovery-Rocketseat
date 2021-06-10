@@ -10,6 +10,7 @@ Rapository (local) ou Histórico
 - onde ficarão os pontos da hitória
 
 ---------------------------------------------------------------------
+__________________________________________________________________________
 
 
 Histórico do projeto no git
@@ -43,6 +44,8 @@ git diff  = mostra todas as alterações do WORKING DIRECTORY versus o repositó
 
 git diff --staged  = mostra somente o que está no stage area versus o que está no repositório
 
+git diff --color-word  = mostra as palavras que foram alteradas.
+
 git rm <file>  = revome totalmente o file, não vai nem pra lixeira
 
 git restore --staged <file>  = tira o file do add para o commit
@@ -73,4 +76,19 @@ git restore --staged <file> .  =  restaurar tudo
 git commit --amend -m "msg here"  =  corrigir a msg do último commit feito.
 
 git checkout <parte da hash code> -- <file>  =  traz um arquivo mais antigo da linha do tempo e já deixa pronto no staged area para commit
-    
+
+
+
+git clean -n  = ver files untracked que serão removidos
+
+git clean -f  = força o git clean, removendo permanentemente os files untracked
+
+git revert  =  diretório precisa estar limpo.
+git revert HEAD~5  =  para reverter para o HEAD -5, voltar 5 pontos na história (criará um novo commit)
+
+git log --oneline  = para ver o log e copiar o hash o qual vc quer dar o revert, em seguida
+git revert <hash copiado>
+    :wq / :q
+
+
+git init  =  iniciar o git em pasta nova sem estar lincada a repositório (sem pasta .git)
