@@ -1,5 +1,6 @@
 Working directory ou working tree
 - todos os nossos arquivos
+não rastreados
 
 Stage area ou Stage tree
 - preparação dos nossos arquivos, para serem commitados
@@ -20,6 +21,7 @@ Primeira config necessária para usar o github (
 
 
 Histórico do projeto no git
+git init  =  iniciar repositório
 ls -al .git  = listar todos os arquivos do diretório .git
 cat .git/config
 cat .gitignore  = ver o que tem no gitignore
@@ -114,3 +116,33 @@ git show <hash> -- <especificar pasta>  =  ver alterações dentro uma pasta, po
 git show mostra exatamente o que tem no diretório em certo momento da história
 
 .gitignore  =  file adicionar arquivos que não quero no repositório.
+
+
+
+
+
+GITHUB
+
+Criando chave SSH para ligar o github com a máquina local
+
+ssh-keygen -t rsa -b 4096 -C "email@email.com"  =  para gerar a chave SSH
+
+-pegar a chave e salvar no github com SSH and GPG keys
+-iniciar o repo com git init
+-criar o que for necessário como o Readme
+
+em seguida:
+git remote add origin <local do repositório com chave SSH>  =  cirar repositório remoto - local aparece logo que criamos o repositório no github, 
+                                                                mudar de https para SSH ex: git@github.com:idusuário/nomerepositório.git
+
+git remote -v  =  ver os repositórios remotos que tem no seu github
+
+
+git branch -M main  =  altera o nome da branch master para main
+
+git pull  =  trazer o que está no repo do github
+
+
+
+git config --global pull.rebase false  =  corrigir os erros do pull
+
