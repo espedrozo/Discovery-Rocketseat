@@ -13,6 +13,12 @@ Rapository (local) ou Histórico
 __________________________________________________________________________
 
 
+Primeira config necessária para usar o github (
+    git config --global user.name "your name"
+    git config --global user.email "your email"
+)
+
+
 Histórico do projeto no git
 ls -al .git  = listar todos os arquivos do diretório .git
 cat .git/config
@@ -44,7 +50,7 @@ git diff  = mostra todas as alterações do WORKING DIRECTORY versus o repositó
 
 git diff --staged  = mostra somente o que está no stage area versus o que está no repositório
 
-git diff --color-word  = mostra as palavras que foram alteradas.
+git diff --color-words  = mostra as palavras que foram alteradas.
 
 git rm <file>  = revome totalmente o file, não vai nem pra lixeira
 
@@ -92,3 +98,5 @@ git revert <hash copiado>
 
 
 git init  =  iniciar o git em pasta nova sem estar lincada a repositório (sem pasta .git)
+
+git commit -am "mensagem"  =  vai direto para o staging area, commit e cria o ponto na história(se os arquivos estão rastreados)
