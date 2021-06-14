@@ -7,7 +7,7 @@ Stage area ou Stage tree
 
 Rapository (local) ou Histórico
 - banco de dados dos nosos arquivos
-- onde ficarão os pontos da hitória
+- onde ficarão os pontos da história
 
 ---------------------------------------------------------------------
 __________________________________________________________________________
@@ -22,6 +22,7 @@ Primeira config necessária para usar o github (
 Histórico do projeto no git
 ls -al .git  = listar todos os arquivos do diretório .git
 cat .git/config
+cat .gitignore  = ver o que tem no gitignore
 
 :q - quit
 :wq - write and quit
@@ -57,6 +58,8 @@ git rm <file>  = revome totalmente o file, não vai nem pra lixeira
 git restore --staged <file>  = tira o file do add para o commit
 
 git rm <file>  =  para remover um file
+
+git rm -r --cached .  ==  tirar tudo o que tinha no cache, nenhum arquivo será rastreado
 
 git add <file>  = adicionar o file, se apagar file e add novo com nome similar, git vai perceber que apenas foi renomeado
 
@@ -100,3 +103,14 @@ git revert <hash copiado>
 git init  =  iniciar o git em pasta nova sem estar lincada a repositório (sem pasta .git)
 
 git commit -am "mensagem"  =  vai direto para o staging area, commit e cria o ponto na história(se os arquivos estão rastreados)
+
+
+git show <hash iniciais do commit>  = mostra as alterações feitas no inicial commit (tudo). Pode usar para ver qualquer commit
+git show <hash iniciais> --color-words =  ver mais especifico
+
+git show <hash> -- <especificar pasta>  =  ver alterações dentro uma pasta, pode usar * para ver todas
+                    ex: -- src/views/*
+
+git show mostra exatamente o que tem no diretório em certo momento da história
+
+.gitignore  =  file adicionar arquivos que não quero no repositório.
