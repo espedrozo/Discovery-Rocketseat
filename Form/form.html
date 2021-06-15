@@ -68,7 +68,7 @@
     <label>
         
         - associar e identificar uma ou mais tags de entrada de dados
-        - acessibilidade
+        - ACESSIBILIDADE - super importante
         - você poderá clicar para mudar o foco da entrada de dados
 
 
@@ -85,3 +85,121 @@
 
 <label for="name">Nome Completo</label>
 <input id="name" type="text">
+
+
+
+
+
+<!-- 
+    <button>
+        - Representa um botão
+        - Usado para enviar formulários
+        - É estilizado pelo seu agent
+
+    Atributos comuns
+        - type
+            submit
+            reset
+            button
+        - autofocus
+        - disabled
+        - name
+        - value
+        - form
+
+    ex:
+-->
+
+<form action="">
+    <input type="text" value="o que estiver aqui aparece no caso do reset">
+    <button type="reset">Limpar</button>
+</form>
+
+
+
+
+
+<!-- 
+    <datalist>
+        - Lista de valores como sugestão a uma tag <input>
+        - Valores sugestivos e não obrigatórios
+        - Usuário poderá selecionar um dos valores, ou colocar um valor diferente da sugestão
+
+        <datalist id="fruitsdata">
+            <option>apple</option>
+            <option>banana</option>
+            <option>mango</option>
+            <option>orange</option>
+            <option>cherry</option>
+        </datalist>
+
+    # List
+        - Recebe como valor o id de um <datalist> residente no mesmo documento.
+
+    # Tipos de input suportados
+            - text, search, url, tel, email, date, month, week, time, datetime-local, number, range e color.
+    
+    # Valores de datalist que não são compatíveis com o tipo do <input> não serão apresentados.
+
+
+    # Tipos de input não suportados (conforme especificação)
+            - hidden, password, checkbox, radio, file, ou qualquer tipo de button.
+
+
+    # User Agent
+            Verificar a compatibilidade com o browser https://caniuse.com
+        
+    ex:
+ -->
+
+ <input type="text" list="fruitsdata" placeholder="Escolha uma fruta"/>
+
+ <datalist id="fruitsdata">
+    <option>apple</option>
+    <option>banana</option>
+    <option>mango</option>
+    <option>orange</option>
+    <option>cherry</option>
+ </datalist>
+
+ <datalist id="colorsdata">
+    <option>#ff0000</option>
+    <option>#00ff00</option>
+ </datalist>
+
+ <input type="color" list="colorsdata"/>
+
+
+
+ <!-- 
+     <input>
+        - Um dos mais usados em formulários
+        - Aceita os mais diversos tipos de dados
+        - Um dos mais poderosos e complexos
+        - Elevado número de combinações
+
+        # Atributos
+            - type
+            - name
+            - id
+            - autocomplete
+                email
+
+            - autofocus
+            - disabled - boolean
+            - value
+            - readonly (quase todos)
+            - form (quase todos)
+            - name
+            - required (quase todos) - boolean
+            - placeholder (quase todos)
+
+        # Types
+            - text
+            - date
+            - number
+            - email
+            - file
+            - password
+
+  -->
