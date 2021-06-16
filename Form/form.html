@@ -203,3 +203,102 @@
             - password
 
   -->
+
+
+<!-- 
+    <input type="password">
+
+        - Colocar uma senha de maneira segura
+        - Esconde o que está sendo digitado no campo
+        - O estilo da apresentação do campo, depende do User Agent
+
+    # Atributos
+
+        - minlength / maxlength
+            O número mínimo e/ou máximo de caracteres para este campo
+        - size
+            O número acietável de caracteres para esse campo deverá conter
+        - pattern
+            Expressão regular para validar o que está senod digitado no campo
+            Altamente recomendado o uso de um padrão de segurança alta de senhas
+            ex: queremos que a senha contenha caracteres hexadecimais com o limite de no mínimo 4 e no máximo 8 caracteres
+                * pattern="[0-9a-fA-F]{4,8}"
+
+        - placeholder
+            Mostra um exemplo de texto a ser digitado no campo
+
+        - readonly / disabled
+            Atributo booleano indicando se o campo está habilitado ou não
+            
+        - required
+            O campo será obrigatório
+
+        - inputmode
+            Poderá alterar o uso do teclado em smartphones
+            ex: queremos que o cliente só adicione números
+                inputmode="numeric"
+
+        - autocomplete
+            on: permite a sugestão de - new-password ou current-password
+            off: desabilita a opção de autocompletar
+            new-password: o navegador poderá sugerir uma nova senha
+ -->
+
+ <form action="">
+     <input 
+        type="password" 
+        minlength="4" 
+        maxlength="8" 
+        size="8" 
+        pattern="[0-9a-fA-F]{4,8}"
+        title="Senha HEX min 4, max 8 caracteres"
+     >
+ </form>
+
+
+ <!-- 
+     <input type="email"/>
+
+        Espera que o usuário digite um email
+        Irá validar se o valor digitado é um email
+
+    # Atributos
+        - placeholder
+        - readonly / disabled
+        - value
+        - required
+
+        - multiple
+            O campo irá receber 1 ou mais emails separados por vírgula
+
+        - minlength / maxlength
+            O mínimo e/ou máximo valor que o campo irá conter
+
+        - size
+            Valor numérico indicando quantos caracteres esse campo deveria conter, 
+            modificando o tamanho do campo para o usuário
+
+        - pattern
+            Uso de expressão regular para validar o campo
+            ex: o usuário só poderá colocar email do domínio rocketseat.com.br
+                pattern=".+@rocketseat\.com\.br"
+
+        - listar
+            O id de uma tag <datalist> que está no mesmo documento.
+            <datalist> irá conter uma lista de valores pré definidos a fim de sugerir
+            ao usuário quais valores estão disponíveis.
+                Os valores do <datalist> que não forem compatíveis com o campo
+                não serão apresentados como sugestão.
+
+  -->
+
+  <form action="">
+      <input 
+        type="email" 
+        multiple 
+        pattern=".+@rocketseat\.com\.br"
+        title="Somente emails rocketseat serão aceitos"
+      >
+      
+      <button type="submit">Enviar</button>
+  </form>
