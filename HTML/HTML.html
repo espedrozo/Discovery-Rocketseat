@@ -69,4 +69,159 @@
 
         Onde utilizar?
             navegação pricipal - topo e laterais da página
+            navegações essenciais
 -->
+
+
+<!-- 
+    <main></main>
+        não possuem atributos específicos, somente os globais
+        uma vez apenas e direto no body
+-->
+
+
+<!-- 
+    <article></article>
+        não possui atributos específicos, Somente os globais.
+        blocos de conteúdos - artigos
+        pode repetir várias vezes
+-->
+
+
+<!-- 
+    <aside></aside>
+        Conteúdos levemente relacionados ao conteúdo principal
+            explicações
+            glossários
+            links extras
+            biografia do autor
+            informações de perfil
+        
+        Apenas atributos globais.
+-->
+
+
+
+<!-- 
+     <footer></footer>
+        Geralmente no final da página
+            informações do autor, copyright, contato, sitemap, voltar ao topo
+        
+        Atributos globais
+-->
+
+
+
+<!-- 
+    <section></section>
+        Apenas atributos globais
+        geralmente acompanhado de um título e após o conteúdo
+-->
+
+
+
+<!-- 
+     Elementos não semânticos, para uso genérico.
+
+     <div></div>
+        Usado se não conseguir achar um elemento de bloco semântico
+
+    <span></span>
+        Usado se não conseguir achar um elemento de texto semântico
+
+    em ambas, use atributos globais como id e class para entregar maior significado
+-->
+
+
+
+
+
+
+
+
+
+
+<!-- 
+    <video>
+        src
+        controls
+        autoplay
+        preload - metadata, none
+        loop
+        muted - inicia mutado
+        poster - adiciona imagem de espera antes de dar o play
+        width
+        height
+        se não funcionar?
+            fallback content
+        
+        source
+            src
+            type
+
+        sobre serviços de terceiros
+-->
+
+
+<video src="" controls width="" height="" autoplay preload="metadata" loop muted poster="">
+    <source src="" type="video/mp4">
+    <p>Este browser não suporta vídeo, baixe aqui: <a href="">link</a></p>
+</video>
+
+
+
+
+
+
+
+
+
+<!-- 
+    <audio></audio>
+        src
+        controls
+        autoplay
+        muted
+        loop
+        se não funcionar:
+            fallback content
+
+        source
+            src
+            type
+
+-->
+
+<audio controls>
+    <source src="" type="audio/mp3">
+    <source src="" type="audio/ogg">
+    <p>Seu navegador não suporta audio.</p>
+</audio>
+
+
+
+
+
+
+
+<!-- 
+    <iframe></iframe>
+
+        #  Atributos
+            src
+            height
+            width
+            title (acessibilidade)
+            allowfullscreen
+            frameborder
+-->
+
+<iframe
+    width=""
+    height=""
+    src=""
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    title="Vídeo tal"
+></iframe>
