@@ -1,0 +1,64 @@
+<!-- 
+    # DOM (Document Object Model)
+        É o HTML convertido para um Objeto JavaScript
+        API que representa e interage com o HTML
+        Estrutura de dados do tipo árvore, criada pelo browser
+        Propriedades e métodos
+
+    
+    # Para que?
+        JavaScript usa a DOM para se conectar ao HTML
+        Manipular o HTML COM O javaScript 
+        Você só programa para WEB porque existe a DOM
+
+
+    Ex:
+    JavaScript
+        getElementById()
+            document.getElementById("nome do id aqui")
+                - retorna um element
+
+        getElementByClassName()
+            document.getElementByClassName("nome da class aqui")
+                - retorna um HtmlCollection
+
+        getElementByTagName()
+            document.getElementByTagName("nome da tag aqui")
+                - retorna um HtmlCollection
+
+
+        querySelector()
+            document.querySelector("nome da .class/#id/tag/[src] aqui")
+                - retorna um element
+
+        querySelectorAll()
+            document.querySelectorAll("nome da .class/#id/tag/[src] aqui")
+                - retorna um NodeList - nesse posso fazer um forEach()
+
+
+        Manipular conteúdo
+            textContent = ""
+                const elemente = document.querySelector('h1');
+                element.textContent = "aqui, conteúdo a ser alterado"
+                element.textContent += "nesse caso irá pegar o que já tem e concatenar com esse novo texto"
+                console.log(element.textContent);
+
+            innerText = ""
+                element.innerText = "novo texto aqui"
+
+
+            innerHTML = ""
+                element.innerHTML = "Olá Devs! <small>!!!!</smal>"
+                    small só é reconhecido como tag devido ao innerHTML
+
+                
+            value
+                element.value = ""
+                console.log(element.value)
+
+
+            Atributos
+                element.setAttribute('id','header segundoId')
+                console.log(element.getAttibute('id'))
+                element.removeAttribute('id')
+-->
