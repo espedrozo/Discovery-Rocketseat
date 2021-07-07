@@ -61,4 +61,66 @@
                 element.setAttribute('id','header segundoId')
                 console.log(element.getAttibute('id'))
                 element.removeAttribute('id')
+
+
+        Alterar estilos
+            const element = document.querySelector('body')
+            element.style.backgroundColor = 'red'
+            console.log(element.style.backgroundColor)
+
+        Alterar classList
+            element.classList.add('active', 'green')
+            element.classList.remove('active')
+            element.classList.toggle('active')
+
+        Navegar pelos elementos pais
+            parentNode (nó pai), parentElement (elemento pai)
+
+                const body = document.querySelector('body')
+                console.log(body.parentNode)
+                console.log(body.parentElement)
+
+        Navegar pelos elementos filhos
+            childNodes (NodeList - traz os espaços vazios como text), children (HTMLCollection - elimina os espaços vazios e tras só os filhos)
+            firstChild (pega elemento vazio-spaço como text), firstElementChild (ignora elemento vazio e pega primeiro elemento filho)
+            lastChild, lastElementChild
+
+                const element = document.querySelector('body')
+                console.log(element.childNodes)
+                console.log(element.children)
+                console.log(element.firstChild)
+
+        Navegar pelos elementos irmãos
+            nextSibling, nextElementSibling
+            previousSibling, previousElementSibling (não pega o espaço vazio)
+
+                element.nextSibling
+
+
+        Criar e adicionar Elementos
+            createElement
+                    document.createElement('')
+
+            append, prepend
+                document.querySelector('body')
+                body.append(div)
+                body.prepend(div)
+
+        Adicionar elementos
+            const body = document.querySelector('body');
+            const script = body.querySelector('script');
+                insertBefore(div, script);
+            
+            simulanod um insertAfter:
+            const header = body.querySelector('header')
+            body.insertBefore(div, header.nextElementSibling)
+
+        Eventos
+            Diversos tipos de eventos
+                <h1 onclick="print()">Menu<h1>
+                function print() {
+                    console.log('print')
+                }
+                toda vez que clicar no Menu irá chamar a função print
+                
 -->
