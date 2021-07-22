@@ -117,7 +117,7 @@
 
         Eventos
             Diversos tipos de eventos
-                <h1 onclick="print()">Menu<h1>
+                <h1.onclick="print()">Menu<h1>
                 function print() {
                     console.log('print')
                 }
@@ -129,4 +129,38 @@
                 .addEventListener('click/mouseover/mouseout', print) - primeiro o tipo do evento, depois o que ele executa
                 function print() {}
 
+                h1.addEventListener('click', print)
+                    function print() {
+                        console.log('printou');
+                    };
+                
+                h1.addEventListener('click', function(){
+                    console.log('outro momento');
+                });
+
+        Argumento event
+            input.on = function(event){
+                console.log(event.currentTarget.value)
+                            event. ....
+            };
+
+    ex:
 -->
+
+<script>
+
+    const buttonOpenModal = document.getElementById('openModal');
+    const modalWrapper = document.querySelector('modal-wrapper');
+
+    buttonOpenModal.onclick = function() {
+        modalWrapper.classList.remove('invisible');
+    };
+
+    document.addEventListener('keydown', function(event){
+        const isEscKey = event.key ==='Escape';
+
+        if(isEscKey){
+            modalWrapper.classList.add('invisible');
+        };
+    });
+</script>
