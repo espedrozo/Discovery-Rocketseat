@@ -1,0 +1,50 @@
+/* 
+    Distâncias relativas
+
+    São relativas a algum outro valor, pode ser o elemento pai, ou root, ou o tamanho da tela.
+
+    Maior adaptação aos diferentes tipos de tela
+
+    - Unidade       - relativo a
+        em              tamanho da fonte do pai
+        rem             tamanho da fonte do elemento raiz (root/html) - fonte padrão do navegador 16px
+        vw              1% da viewport width
+        vh              1% da viewport height
+
+
+    Distâncias absolutas <length>
+
+    São fixas e não alteram seu valor
+
+    Unidade         Equivalência
+    cm              1cm = 96px/2.54
+    in (inches)     1in = 2.54cm = 96px
+    px              1px = 1/96th of 1in
+
+
+
+    Porcentagens %
+
+    Em muitos casos é tratado da mesma maneira que as distâncias <length>
+    Sempre será relativo a algum valor
+
+
+
+    Pisições <position>
+
+    Representa um conjunto de coordenadas 2D:
+    - top, right, bottom, left e center
+
+    Usado para alguns tipos de propriedades
+    Não confundir com a propriedade 'position'
+
+
+    Funções
+
+    funções são reconhecidas por causar reaproveitamento de código.
+
+    rgb()
+    hsl()
+    url()
+    calc()
+*/
